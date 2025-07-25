@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import {NgClass, NgStyle} from '@angular/common';
 import {StarRatingComponent} from '../../components/star-rating/star-rating.component';
 import {MovieService} from '../../services/movie.service';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-movie-list',
   imports: [
     NgStyle,
-    StarRatingComponent
+    StarRatingComponent,
+    TranslatePipe
   ],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.scss'
